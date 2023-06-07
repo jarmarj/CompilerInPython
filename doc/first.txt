@@ -1,0 +1,82 @@
+FIRST( PROGRAMA ) = { < (1) }
+
+FIRST( DECLARACIONVARIABLES ) = { variables(2) } 
+
+FIRST( VARIABLES ) = { ( (3), null(4) }
+
+FIRST( LISTAVARIABLES ) = { identificador(5) }
+
+FIRST( lISTAVARIABLESPRIMA ) = { ;(6), null(7) }
+
+FIRST( MAIN ) = { <(8) }
+
+FIRST( TIPO ) = { entero(9),cadena(10),logico(11),lista(12),decimal(13) }
+
+FIRST( DECLARACIONFUNCIONES  ) = { ( (14), null(14) }
+
+FIRST( DECLARAFUNCION ) = { ( (16), null(17) }
+
+FIRST( BLOQUE ) = { begin (18) }
+
+FIRST( PARAMETROS ) = { { (19) }
+
+FIRST( LISTAPARAMETROS ) = { identificador (20), null (21) }
+
+FIRST( LISTAPARAMETROSPRIMA ) = { ; (22), null (23) }
+
+FIRST( RETURN ) = {  return (24) }
+
+FIRST( LISTARETURN ) = { identificador (25) }
+
+FIRST( LISTARETURNPRIMA ) = { identificador(25), null(27) }
+
+FIRST( INSTRUCCIONES ) = { identificador(28),mientras(28),ciclo(28),repetir(28),si(28),para(28),imprimir(28) null(29)}
+
+FIRST( INSTRUCCION ) = { identificador(30),mientras(31),ciclo(32),repetir(33),si(34),para(35),imprimir(36) }
+
+FIRST( LLAMADAFUNCION ) = { identificador(37), longitud(38),esentero(38),esdecimal(38),entero(38),decimal(38),leer(38),absoluto(38),cadena(38),potencia(38),redondear(38),sumar(38),minimo(38),maximo(38) }	
+
+FIRST( FUNCION_BUILT_IN ) = { longitud(39),esentero(40),esdecimal(41),entero(42),decimal(43),leer(44),absoluto(45),cadena(46),potencia(47),redondear(48),sumar(49),minimo(50),maximo(51) }
+
+FIRST( VARIABLESIMPRIMIR ) = { identificador(52), texto(53) }
+
+FIRST( VARIABLEPRIMA ) = { ,(54) null(55) }
+
+FIRST( ELSEIF ) = { sino(56), null(57) }
+
+FIRST( ELSE ) = { null(58), otro(59) }
+
+FIRST( RANGO ) = { rango(60) }
+
+FIRST( VALOR1 ) = { identificador(61), numero(61) }
+
+FIRST( VALOR2 ) = { null(62), ;(63) }
+
+FIRST( VALOR3 ) = { null(64), ;(65) }
+
+FIRST( BOOLEXP ) = { ~~(66), ( (66), identificador(66), numero(66) }
+
+FIRST( BOOLEXP_PRIMA ) = { o(67), null(68) }
+
+FIRST( BOOLTERM ) = { ~~(69), ( (69), identificador(69) numero(69) }
+
+FIRST( BOOLTERM_PRIMA ) = { y(70), null(71) }
+
+FIRST( BOOLFACTOR ) = { ~~(72), ( (73), identificador(74) numero(74) }
+
+FIRST( RELTERMP ) = { <:(75), >:(75), <=(75), >=(75), :=:=(75), :!=(75), null(76) }
+
+FIRST( RELTERM ) = { identificador(77) numero(77) }
+
+FIRST( EXPARITM ) = { identificador(78) numero(78) }
+
+FIRST( EXPPRIMA ) = { +:(79), -:(80), null(81) }
+
+FIRST( TERMINO ) = { identificador(82) numero(82) }
+
+FIRST( TERMINOPRIMO ) = { *:(83), /:(84), null(85) }
+
+FIRST( FACTOR ) = { identificador(86) numero(87) }
+
+FIRST( OPERADOR ) = { <:(88), >:(89), <=(90), >=(91), :=:=(92), :!=(93) }
+

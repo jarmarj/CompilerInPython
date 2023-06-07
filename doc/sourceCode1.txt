@@ -1,0 +1,134 @@
+<bloque principal>begin
+    
+    /*aqui van las instrucciones
+    comentario de varias lineas
+    .
+    .
+    ..
+    .
+    .
+    aqui van las instrucciones*/
+    imprimir (%id)
+    
+    /*instruccion llamando una funcion con parametros*/
+    %instruccion1 := %llamadafunc [%param1;%param2]
+    imprimir (%imprimir)
+    /*instruccion llamando una funcion-built-in*/
+    %instruccion2 := leer()
+    %instruccion3 := longitud(%identificador3)
+    %instruccion4 := esentero(%identificador4)
+    %instruccion5 := esdecimal(%identificador5)
+    %instruccion6 := sumar(%identificador6)
+    %instruccion7 := minimo(%identificador7)
+    %instruccion8 := maximo(%identificador8)
+
+    /*instrucciones de mientras, ciclo, repetir, si*/
+
+    mientras ~~ (%termino <: %termino2) begin
+        %instruccion2 := leer()
+        %instruccion3 := longitud(%identificador3)
+        %instruccion4 := esentero(%identificador4)
+        %instruccion5 := esdecimal(%identificador5)
+        %instruccion6 := sumar(%identificador6)
+        %instruccion7 := minimo(%identificador7)
+        %instruccion8 := maximo(%identificador8)
+    end
+
+    mientras ~~ (%bool1 :=:= %bool2) begin
+        %instruccion2 := leer()
+        %instruccion3 := longitud(%identificador3)
+        %instruccion4 := esentero(%identificador4)
+        %instruccion5 := esdecimal(%identificador5)
+        %instruccion6 := sumar(%identificador6)
+        %instruccion7 := minimo(%identificador7)
+        %instruccion8 := maximo(%identificador8)
+    end
+    
+    ciclo begin end ~~ (%termino3 <: %termino4)
+
+    imprimir('hola')
+
+    si ~~ (%ter <: %ter2) begin
+        %instruccion2 := leer()
+        %instruccion3 := longitud(%identificador3)
+        %instruccion4 := esentero(%identificador4)
+        %instruccion5 := esdecimal(%identificador5)
+        %instruccion6 := sumar(%identificador6)
+        %instruccion7 := minimo(%identificador7)
+        %instruccion8 := maximo(%identificador8)
+    end
+    sino ~~ (%ter3 <: %ter4) begin
+        %instruccion2 := leer()
+        %instruccion3 := longitud(%identificador3)
+        %instruccion4 := esentero(%identificador4)
+        %instruccion5 := esdecimal(%identificador5)
+        %instruccion6 := sumar(%identificador6)
+        %instruccion7 := minimo(%identificador7)
+        %instruccion8 := maximo(%identificador8)
+    end
+    otro begin
+        %instruccion2 := leer()
+        %instruccion3 := longitud(%identificador3)
+        %instruccion4 := esentero(%identificador4)
+        %instruccion5 := esdecimal(%identificador5)
+        %instruccion6 := sumar(%identificador6)
+        %instruccion7 := minimo(%identificador7)
+        %instruccion8 := maximo(%identificador8)
+    end
+
+    si ~~ (%ter <: %ter2) begin
+    end
+
+end
+
+/*aqui van las variables*/
+variables : //{ 
+    (entero) %id1 ::
+    (cadena) %id2 ::
+    (logico) %id3 ::
+    (lista) %id4 ::
+    (decimal) %id5 ::
+//}
+
+(entero) %funcion1 {%parametro1; %parametro2} begin
+    ciclo begin end ~~ (%termino3 <: %termino4)
+    si ~~ (%ter <: %ter2) begin end
+    sino ~~ (%ter3 <: %ter4) begin end
+    otro begin end
+end
+return %return1
+
+(cadena) %funcion2 {%parametro1; %parametro2} begin
+    ciclo begin end ~~ (%termino3 <: %termino4)
+    si ~~ (%ter <: %ter2) begin end
+    sino ~~ (%ter3 <: %ter4) begin end
+    otro begin end
+end
+return %return2
+
+(logico) %funcion3 {%parametro1; %parametro2} begin
+    ciclo begin end ~~ (%termino3 <: %termino4)
+    si ~~ (%ter <: %ter2) begin end
+    sino ~~ (%ter3 <: %ter4) begin end
+    otro begin end
+end
+return %return3
+
+(lista) %funcion4 {%parametro1; %parametro2} begin
+    ciclo begin end ~~ (%termino3 <: %termino4)
+    si ~~ (%ter <: %ter2) begin end
+    sino ~~ (%ter3 <: %ter4) begin end
+    otro begin end
+end
+return %return4
+
+(decimal) %funcion5 {%parametro1; %parametro2} begin
+    ciclo begin end ~~ (%termino3 <: %termino4)
+    si ~~ (%ter <: %ter2) begin end
+    sino ~~ (%ter3 <: %ter4) begin end
+    otro begin end
+end
+return %return5
+
+/* esto es un comentario 
+varias lineas?:D*/*/

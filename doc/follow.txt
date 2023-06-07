@@ -1,0 +1,87 @@
+FOLLOW ( PROGRMAMA ) = { eof }
+
+FOLLOW ( DECLARACIONVARIABLES ) = { (, eof }
+
+FOLLOW ( VARIABLES ) = { //} }
+
+FOLLOW ( LISTAVARIABLES ) = { :: }
+
+FOLLOW ( LISTAVARIABLESPRIMA) = { :: }
+
+FOLLOW ( MAIN ) = { variables }
+
+FOLLOW ( TIPO ) = { ) }
+
+FOLLOW ( DECLARACIONFUNCIONES ) = { eof }
+
+FOLLOW ( DECLARAFUNCION ) = { ( , eof }
+
+FOLLOW ( BLOQUE ) = { variables, return, identificador, mientras, ciclo, repetir, si, para, imprimir, end, ~~, (, identificador, numero, sino, otro }
+
+FOLLOW ( PARAMETROS ) = { begin }
+
+FOLLOW ( LISTAPARAMETROS ) = {   }, ] }
+
+FOLLOW ( LISTAPARAMETROSPRIMA ) = { }, ] }
+
+FOLLOW ( RETURN ) = { (, eof }
+
+FOLLOW ( LISTARETURN ) = { (, eof }
+
+FOLLOW ( LISTARETURNPRIMA ) = { (, eof }
+
+FOLLOW ( INSTRUCCIONES ) = { end }
+
+FOLLOW ( INSTRUCCION ) = { identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( LLAMADAFUNCION ) = { identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( FUNCION_BUILT_IN ) = { identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( VARIABLESIMPRIMIR ) = { ) }
+
+FOLLOW ( VARIABLESPRIMA ) = { ) }
+
+FOLLOW ( ELSEIF ) = { otro, identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( ELSE ) = { identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( RANGO ) = { begin }
+
+FOLLOW ( VALOR1 ) = { ) }
+
+FOLLOW ( VALOR2 ) = { ) }
+
+FOLLOW ( VALOR3 ) = { ) }
+
+FOLLOW ( BOOLEXP ) = { begin, identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( BOOLEXP_PRIMA ) = { begin, identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( BOOLTERM ) = { o, begin, identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( BOOLTERM_PRIMA ) = { o, begin, identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( BOOLFACTOR ) = { y, o, begin, identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( RELTERMP ) = { ), y, o, begin, identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( RELTERM ) = { <:, >:, <=, >=, :=:=, :!=, ), y, o, begin, identificador, mientras, ciclo, repetir, si, para, imprimir, end }
+
+FOLLOW ( EXPARITM ) = { ;, <:, >:, <=, >=, :=:=, :!=, ), y, o, begin, identificador, mientras, ciclo, repetir, si, para,
+			imprimir, end }
+
+FOLLOW ( EXPPRIMA ) = { ;, <:, >:, <=, >=, :=:=, :!=, ), y, o, begin, identificador, mientras, ciclo, repetir, si, para,
+			imprimir, end }
+
+FOLLOW ( TERMINO ) = { +:, -:, ;, <:, >:, <=, >=, :=:=, :!=, ), y, o, begin, identificador, mientras, ciclo, repetir, si, para,
+			imprimir, end }
+
+FOLLOW ( TERMPRIMO ) = { +:, -:, ;, <:, >:, <=, >=, :=:=, :!=, ), y, o, begin, identificador, mientras, ciclo, repetir, si, para,
+			imprimir, end }
+
+FOLLOW ( FACTOR ) = { *:, /:, +:, -:, ;, <:, >:, <=, >=, :=:=, :!=, ), y, o, begin, identificador, mientras, ciclo, repetir, si, para,
+			imprimir, end }
+
+FOLLOW ( OPERADOR ) = { identificador,  numero }
+
